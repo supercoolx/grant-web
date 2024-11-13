@@ -1,0 +1,11 @@
+@import url('/fonts/neue/index.css');
+@import url('/fonts/pro/index.css');
+@import url('/fonts/compact/index.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'SF Pro Display';
+}
