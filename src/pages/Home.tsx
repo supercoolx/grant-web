@@ -63,10 +63,10 @@ const Home = () => {
           <span className="text-2xl font-semibold">WMTx</span>
         </div>
         <div className="flex flex-col items-center lg:items-start mt-10 sm:mt-20 lg:mt-[113px] px-5 lg:px-0 w-full">
-          <motion.div initial={{ transform: "translate(100px, 0)", opacity: 0 }} whileInView={{ transform: "translate(0, 0px)", opacity: 1 }}  className="font-bold font-neue text-[50px] text-center sm:text-[70px] md:text-[80px] lg:text-[100px] lg:text-left xs:text-[60px] leading-none tracking-tighter scale-x-90 xs:scale-x-100">
+          <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}  className="font-bold font-neue text-[50px] text-center sm:text-[70px] md:text-[80px] lg:text-[100px] lg:text-left xs:text-[60px] leading-none tracking-tighter scale-x-90 xs:scale-x-100">
             THE FRENCH<br />CONNECTIVITY
           </motion.div>
-          <motion.div initial={{ transform: "translate(100px, 0)", opacity: 0 }} whileInView={{ transform: "translate(0, 0px)", opacity: 1 }} className="space-y-[10px] mt-5 text-center lg:text-left">
+          <motion.div initial={{ transform: "translate(0, 100px)", opacity: 0 }} whileInView={{ transform: "translate(0, 0px)", opacity: 1 }} className="space-y-[10px] mt-5 text-center lg:text-left">
             <div className="font-semibold text-[20px] text-center lg:text-left text-wrap">
               <p>Introducing the World Mobile Chain Grant Program:</p>
               <p><span className="text-transparent bg-clip-text bg-gradient-primary">Allocating $25M</span> to Fuel the Future of DePIN Development</p>
@@ -74,17 +74,17 @@ const Home = () => {
             <div className="max-w-[547px] text-[#BDB2D0]">Introducing World Mobile Chain’s dedicated non-dilutive grant program, enabling the wave of DePIN innovation onchain.</div>
           </motion.div>
           <div className="flex gap-[10px] sm:gap-5 mt-10 w-full justify-center lg:justify-start">
-            <Button className="w-full xs:w-auto bg-white xs:px-[50px] py-5 rounded-[5px] font-semibold text-[#0C021D] text-[18px] leading-none">Apply now</Button>
-            <Button className="w-full xs:w-auto border-white bg-gradient-to-b from-white/50 to-white/0 xs:px-[50px] py-5 border rounded-[5px] font-semibold text-[18px] leading-none">Learn more</Button>
+            <Button href="https://forms.gle/dsb6hQsuu3omcLeT9" className="flex items-center justify-center w-full xs:w-auto bg-white xs:px-[50px] py-5 rounded-[5px] font-semibold text-[#0C021D] text-[18px] leading-none">Apply now</Button>
+            <Button href="https://forms.gle/dsb6hQsuu3omcLeT9" className="flex items-center justify-center w-full xs:w-auto border-white bg-gradient-to-b from-white/50 to-white/0 xs:px-[50px] py-5 border rounded-[5px] font-semibold text-[18px] leading-none">Learn more</Button>
           </div>
           <div className="lg:top-1/2 lg:right-[25px] bottom-10 absolute flex lg:flex-col items-center gap-5 mt-10 lg:mt-0 lg:-translate-y-1/2">
-            <Button className="flex justify-center items-center border-white bg-gradient-to-b from-white/50 to-white/0 border rounded-full w-[50px] h-[50px]">
+            <Button href="https://t.me/WorldMobileTeam" className="flex justify-center items-center border-white bg-gradient-to-b from-white/50 to-white/0 border rounded-full w-[50px] h-[50px]">
               <Telegram />
             </Button>
-            <Button className="flex justify-center items-center border-white bg-gradient-to-b from-white/50 to-white/0 border rounded-full w-[50px] h-[50px]">
+            <Button href="https://x.com/wmtoken" className="flex justify-center items-center border-white bg-gradient-to-b from-white/50 to-white/0 border rounded-full w-[50px] h-[50px]">
               <Discord />
             </Button>
-            <Button className="flex justify-center items-center border-white bg-gradient-to-b from-white/50 to-white/0 border rounded-full w-[50px] h-[50px]">
+            <Button href="https://discord.gg/worldmobile" className="flex justify-center items-center border-white bg-gradient-to-b from-white/50 to-white/0 border rounded-full w-[50px] h-[50px]">
               <X />
             </Button>
             <Button className="flex justify-center items-center border-white bg-gradient-to-b from-white/50 to-white/0 border rounded-full w-[50px] h-[50px]">
@@ -101,8 +101,8 @@ const Home = () => {
           <p>The company recognises the vast potential of DePIN in revolutionising network infrastructure and is allocating significant resources to support projects built on its dedicated chain. With a strong emphasis on expanding its presence in the United States and other key markets globally, World Mobile aims to establish itself as a premier facilitator of DePIN technology. Through this ecosystem support programme, World Mobile seeks to collaborate with developers, entrepreneurs, and organisations who share its vision of a more secure, efficient, and user-centric network infrastructure. The company believes that by cultivating a thriving ecosystem of DePIN solutions, it can accelerate the realisation of this transformative technology's full potential.</p>
         </div>
         <div className="flex flex-col justify-center w-full gap-5 mt-10 sm:flex-row">
-          <Button className="w-full sm:w-auto bg-white px-[50px] py-5 rounded-[5px] font-semibold text-[#0C021D] text-[18px] leading-none">Apply now</Button>
-          <Button className="w-full sm:w-auto border-white hover:bg-white p-5 border rounded-[5px] font-semibold text-[18px] hover:text-[#0C021D] leading-none">More about the program</Button>
+          <Button className="flex items-center justify-center w-full sm:w-auto bg-white px-[50px] py-5 rounded-[5px] font-semibold text-[#0C021D] text-[18px] leading-none">Apply now</Button>
+          <Button className="flex items-center justify-center w-full sm:w-auto border-white bg-gradient-to-b from-white/50 to-white/0 p-5 border rounded-[5px] font-semibold text-[18px] hover:text-[#0C021D] leading-none">More about the program</Button>
         </div>
       </motion.div>
 
@@ -116,8 +116,8 @@ const Home = () => {
             The $25,000,000 grant programme is powered by the World Mobile Token (WMTx). WMTx is the utility token that enables the sharing economy of World Mobile's global mobile network. All transactions generated on the network, including calls, data usage, and wallet transactions, will be paid out in WMTx to node operators and those staking WMTx. By rewarding network participants for actual usage, such as calls, texts, streaming, and internet browsing, World Mobile is establishing itself as a pioneer in the wireless industry, offering a unique and sustainable model for network growth and user engagement.
           </div>
           <div className="flex flex-col justify-center w-full gap-5 mt-5 sm:flex-row">
-            <Button className="bg-white px-[50px] py-5 rounded-[5px] font-semibold text-[#0C021D] text-[18px] leading-none">Apply now</Button>
-            <Button className="border-white hover:bg-white p-5 border rounded-[5px] font-semibold text-[18px] hover:text-[#0C021D] leading-none">More about WMC</Button>
+            <Button href="https://forms.gle/dsb6hQsuu3omcLeT9" className="flex items-center justify-center bg-white px-[50px] py-5 rounded-[5px] font-semibold text-[#0C021D] text-[18px] leading-none">Apply now</Button>
+            <Button href="https://forms.gle/dsb6hQsuu3omcLeT9" className="flex items-center justify-center border-white bg-gradient-to-b from-white/50 to-white/0 p-5 border rounded-[5px] font-semibold text-[18px] hover:text-[#0C021D] leading-none">More about WMC</Button>
           </div>
         </motion.div>
       </Section>
@@ -146,8 +146,8 @@ const Home = () => {
             </div>
           </div>
           <div className="flex flex-col justify-center w-full gap-5 mt-10 sm:flex-row">
-            <Button className="bg-white px-[50px] py-5 rounded-[5px] font-semibold text-[#0C021D] text-[18px] leading-none">Apply now</Button>
-            <Button className="border-white hover:bg-white p-5 border rounded-[5px] font-semibold text-[18px] hover:text-[#0C021D] leading-none">Projects we support</Button>
+            <Button href="https://forms.gle/dsb6hQsuu3omcLeT9" className="flex items-center justify-center bg-white px-[50px] py-5 rounded-[5px] font-semibold text-[#0C021D] text-[18px] leading-none">Apply now</Button>
+            <Button href="https://forms.gle/dsb6hQsuu3omcLeT9" className="flex items-center justify-center border-white bg-gradient-to-b from-white/50 to-white/0 p-5 border rounded-[5px] font-semibold text-[18px] hover:text-[#0C021D] leading-none">Projects we support</Button>
           </div>
         </motion.div>
       </Section>
@@ -167,7 +167,7 @@ const Home = () => {
             </div>)}
           </div>
           <div className="flex justify-center w-full mt-10">
-            <Button className="bg-white w-full sm:w-auto px-2 sm:px-[20px] lg:px-[50px] py-5 rounded-[5px] font-semibold text-[#0C021D] text-[18px] leading-none tracking-tighter">Apply For The French Connectivity Grant Program</Button>
+            <Button href="https://forms.gle/dsb6hQsuu3omcLeT9" className="flex items-center justify-center text-center bg-white w-full sm:w-auto px-2 sm:px-[20px] lg:px-[50px] py-5 rounded-[5px] font-semibold text-[#0C021D] text-[18px] leading-none tracking-tighter">Apply For The French Connectivity Grant Program</Button>
           </div>
         </motion.div>
       </Section>
@@ -181,9 +181,9 @@ const Home = () => {
             <div className="font-semibold text-[18px] sm:text-[28px] tracking-tighter whitespace-nowrap">Powering the future of connectivity</div>
           </div>
           <div className="flex flex-col items-center justify-center gap-4 tracking-tighter xs:flex-row">
-            <a href="#">Terms and conditions</a>
-            <a href="#">Privacy policy</a>
-            <a href="#">Cookie policy</a>
+            <a href="https://worldmobiletoken.com/terms-and-conditions?_gl=1*1ydkj44*_up*MQ..*_ga*NTEwMDM0NDIyLjE3MzE1NDg5NTc.*_ga_4H9G3W8ZW7*MTczMTU0ODk1Ny4xLjAuMTczMTU0ODk1Ny4wLjAuMA.." target="_blank">Terms and conditions</a>
+            <a href="https://worldmobiletoken.com/privacy-policy?_gl=1*1ydkj44*_up*MQ..*_ga*NTEwMDM0NDIyLjE3MzE1NDg5NTc.*_ga_4H9G3W8ZW7*MTczMTU0ODk1Ny4xLjAuMTczMTU0ODk1Ny4wLjAuMA.." target="_blank">Privacy policy</a>
+            <a href="https://worldmobiletoken.com/cookie-policy?_gl=1*1ydkj44*_up*MQ..*_ga*NTEwMDM0NDIyLjE3MzE1NDg5NTc.*_ga_4H9G3W8ZW7*MTczMTU0ODk1Ny4xLjAuMTczMTU0ODk1Ny4wLjAuMA.." target="_blank">Cookie policy</a>
           </div>
           <div className="font-semibold text-center">© 2024 World Mobile Token (BVI) Ltd All rights reserved</div>
         </motion.div>
