@@ -1,3 +1,7 @@
+import { motion, useScroll } from "motion/react";
+
+import Button from "../components/Button";
+
 import Section from "../components/Section";
 import Telegram from "../assets/svgs/telegram.svg?react";
 import Discord from "../assets/svgs/discord.svg?react";
@@ -48,59 +52,62 @@ const contents = [
 ]
 
 const Home = () => {
+  const { scrollYProgress } = useScroll();
+
   return (
     <div className="relative">
+      <motion.div className="fixed top-0 left-0 z-10 w-full h-1 origin-left bg-red-500" style={{ scaleX: scrollYProgress }} />
       <div className="relative flex flex-col items-center lg:items-start bg-[url('/imgs/home-mobile.jpg')] lg:bg-[url('/imgs/home.jpg')] bg-cover bg-center lg:px-[140px] pt-[53px] h-[810px]">
         <div className="flex items-center gap-4">
           <img src="/imgs/logo.png" alt="" className="" width={40} height={40} />
           <span className="text-2xl font-semibold">WMTx</span>
         </div>
         <div className="flex flex-col items-center lg:items-start mt-10 sm:mt-20 lg:mt-[113px] px-5 lg:px-0 w-full">
-          <div className="font-bold font-neue text-[50px] text-center sm:text-[70px] md:text-[80px] lg:text-[100px] lg:text-left xs:text-[60px] leading-none tracking-tighter scale-x-90 xs:scale-x-100">
+          <motion.div initial={{ transform: "translate(100px, 0)", opacity: 0 }} whileInView={{ transform: "translate(0, 0px)", opacity: 1 }}  className="font-bold font-neue text-[50px] text-center sm:text-[70px] md:text-[80px] lg:text-[100px] lg:text-left xs:text-[60px] leading-none tracking-tighter scale-x-90 xs:scale-x-100">
             THE FRENCH<br />CONNECTIVITY
-          </div>
-          <div className="space-y-[10px] mt-5 text-center lg:text-left">
+          </motion.div>
+          <motion.div initial={{ transform: "translate(100px, 0)", opacity: 0 }} whileInView={{ transform: "translate(0, 0px)", opacity: 1 }} className="space-y-[10px] mt-5 text-center lg:text-left">
             <div className="font-semibold text-[20px] text-center lg:text-left text-wrap">
               <p>Introducing the World Mobile Chain Grant Program:</p>
               <p><span className="text-transparent bg-clip-text bg-gradient-primary">Allocating $25M</span> to Fuel the Future of DePIN Development</p>
             </div>
             <div className="max-w-[547px] text-[#BDB2D0]">Introducing World Mobile Chain’s dedicated non-dilutive grant program, enabling the wave of DePIN innovation onchain.</div>
-          </div>
+          </motion.div>
           <div className="flex gap-[10px] sm:gap-5 mt-10 w-full justify-center lg:justify-start">
-            <button className="w-full xs:w-auto bg-white xs:px-[50px] py-5 rounded-[5px] font-semibold text-[#0C021D] text-[18px] leading-none">Apply now</button>
-            <button className="w-full xs:w-auto border-white bg-gradient-to-b from-white/50 to-white/0 xs:px-[50px] py-5 border rounded-[5px] font-semibold text-[18px] leading-none">Learn more</button>
+            <Button className="w-full xs:w-auto bg-white xs:px-[50px] py-5 rounded-[5px] font-semibold text-[#0C021D] text-[18px] leading-none">Apply now</Button>
+            <Button className="w-full xs:w-auto border-white bg-gradient-to-b from-white/50 to-white/0 xs:px-[50px] py-5 border rounded-[5px] font-semibold text-[18px] leading-none">Learn more</Button>
           </div>
           <div className="lg:top-1/2 lg:right-[25px] bottom-10 absolute flex lg:flex-col items-center gap-5 mt-10 lg:mt-0 lg:-translate-y-1/2">
-            <button className="flex justify-center items-center hover:scale-110 active:scale-100 border-white bg-gradient-to-b from-white/50 to-white/0 border rounded-full w-[50px] h-[50px] transition-all duration-200">
+            <Button className="flex justify-center items-center border-white bg-gradient-to-b from-white/50 to-white/0 border rounded-full w-[50px] h-[50px]">
               <Telegram />
-            </button>
-            <button className="flex justify-center items-center hover:scale-110 active:scale-100 border-white bg-gradient-to-b from-white/50 to-white/0 border rounded-full w-[50px] h-[50px] transition-all duration-200">
+            </Button>
+            <Button className="flex justify-center items-center border-white bg-gradient-to-b from-white/50 to-white/0 border rounded-full w-[50px] h-[50px]">
               <Discord />
-            </button>
-            <button className="flex justify-center items-center hover:scale-110 active:scale-100 border-white bg-gradient-to-b from-white/50 to-white/0 border rounded-full w-[50px] h-[50px] transition-all duration-200">
+            </Button>
+            <Button className="flex justify-center items-center border-white bg-gradient-to-b from-white/50 to-white/0 border rounded-full w-[50px] h-[50px]">
               <X />
-            </button>
-            <button className="flex justify-center items-center hover:scale-110 active:scale-100 border-white bg-gradient-to-b from-white/50 to-white/0 border rounded-full w-[50px] h-[50px] transition-all duration-200">
+            </Button>
+            <Button className="flex justify-center items-center border-white bg-gradient-to-b from-white/50 to-white/0 border rounded-full w-[50px] h-[50px]">
               <Message />
-            </button>
+            </Button>
           </div>
         </div>
       </div>
 
-      <div className="flex flex-col items-center px-5 xs:px-10 sm:px-16 md:px-20 lg:px-[100px] py-[90px]">
+      <motion.div initial={{ transform: "translate(0, 100px)", opacity: 0 }} whileInView={{ transform: "translate(0, 0px)", opacity: 1 }}  className="flex flex-col items-center px-5 xs:px-10 sm:px-16 md:px-20 lg:px-[100px] py-[90px]">
         <div className="bg-gradient-primary px-2 sm:px-10 py-[15px] rounded-[5px] font-bold font-neue text-[20px] xs:text-[35px] lg:text-[50px] text-center uppercase leading-none tracking-tighter">World Mobile's Ecosystem Program<br />Fuels Global DePIN Innovation</div>
         <div className="mt-5 text-[#BDB2D0] text-center">
           <p>World Mobile, the world's first global decentralised wireless network, is pleased to announce the launch of its ecosystem support programme designed to encourage innovation and development on the World Mobile Chain. As a leading provider of Decentralised Physical Infrastructure Network (DePIN) technology, World Mobile is dedicated to promoting the adoption and growth of DePIN solutions worldwide.</p><br />
           <p>The company recognises the vast potential of DePIN in revolutionising network infrastructure and is allocating significant resources to support projects built on its dedicated chain. With a strong emphasis on expanding its presence in the United States and other key markets globally, World Mobile aims to establish itself as a premier facilitator of DePIN technology. Through this ecosystem support programme, World Mobile seeks to collaborate with developers, entrepreneurs, and organisations who share its vision of a more secure, efficient, and user-centric network infrastructure. The company believes that by cultivating a thriving ecosystem of DePIN solutions, it can accelerate the realisation of this transformative technology's full potential.</p>
         </div>
         <div className="flex flex-col justify-center w-full gap-5 mt-10 sm:flex-row">
-          <button className="w-full sm:w-auto bg-white px-[50px] py-5 rounded-[5px] font-semibold text-[#0C021D] text-[18px] leading-none">Apply now</button>
-          <button className="w-full sm:w-auto border-white hover:bg-white p-5 border rounded-[5px] font-semibold text-[18px] hover:text-[#0C021D] leading-none transition-all duration-200">More about the program</button>
+          <Button className="w-full sm:w-auto bg-white px-[50px] py-5 rounded-[5px] font-semibold text-[#0C021D] text-[18px] leading-none">Apply now</Button>
+          <Button className="w-full sm:w-auto border-white hover:bg-white p-5 border rounded-[5px] font-semibold text-[18px] hover:text-[#0C021D] leading-none">More about the program</Button>
         </div>
-      </div>
+      </motion.div>
 
       <Section>
-        <div className="apply-section">
+        <motion.div initial={{ transform: "translate(0, 100px)", opacity: 0 }} whileInView={{ transform: "translate(0, 0px)", opacity: 1 }}  className="apply-section">
           <div className="text-center">
             <div className="font-bold font-neue text-[40px] sm:text-[60px] lg:text-[100px] leading-none">$25,000,000</div>
             <div className="mt-[10px] font-semibold text-[20px] xs:text-[24px]">Grant Powered by $WMTx</div>
@@ -109,14 +116,14 @@ const Home = () => {
             The $25,000,000 grant programme is powered by the World Mobile Token (WMTx). WMTx is the utility token that enables the sharing economy of World Mobile's global mobile network. All transactions generated on the network, including calls, data usage, and wallet transactions, will be paid out in WMTx to node operators and those staking WMTx. By rewarding network participants for actual usage, such as calls, texts, streaming, and internet browsing, World Mobile is establishing itself as a pioneer in the wireless industry, offering a unique and sustainable model for network growth and user engagement.
           </div>
           <div className="flex flex-col justify-center w-full gap-5 mt-5 sm:flex-row">
-            <button className="bg-white px-[50px] py-5 rounded-[5px] font-semibold text-[#0C021D] text-[18px] leading-none">Apply now</button>
-            <button className="border-white hover:bg-white p-5 border rounded-[5px] font-semibold text-[18px] hover:text-[#0C021D] leading-none transition-all duration-200">More about WMC</button>
+            <Button className="bg-white px-[50px] py-5 rounded-[5px] font-semibold text-[#0C021D] text-[18px] leading-none">Apply now</Button>
+            <Button className="border-white hover:bg-white p-5 border rounded-[5px] font-semibold text-[18px] hover:text-[#0C021D] leading-none">More about WMC</Button>
           </div>
-        </div>
+        </motion.div>
       </Section>
 
       <Section>
-        <div className="flex flex-col items-center">
+        <motion.div initial={{ transform: "translate(0, 100px)", opacity: 0 }} whileInView={{ transform: "translate(0, 0px)", opacity: 1 }}  className="flex flex-col items-center">
           <div className="font-bold font-neue text-[20px] xs:text-[35px] lg:text-[50px] text-center uppercase leading-none tracking-tighter">
             Why build on the <span className="text-transparent bg-clip-text bg-gradient-primary">World Mobile Chain (WMC)?</span>
           </div>
@@ -139,14 +146,14 @@ const Home = () => {
             </div>
           </div>
           <div className="flex flex-col justify-center w-full gap-5 mt-10 sm:flex-row">
-            <button className="bg-white px-[50px] py-5 rounded-[5px] font-semibold text-[#0C021D] text-[18px] leading-none">Apply now</button>
-            <button className="border-white hover:bg-white p-5 border rounded-[5px] font-semibold text-[18px] hover:text-[#0C021D] leading-none transition-all duration-200">Projects we support</button>
+            <Button className="bg-white px-[50px] py-5 rounded-[5px] font-semibold text-[#0C021D] text-[18px] leading-none">Apply now</Button>
+            <Button className="border-white hover:bg-white p-5 border rounded-[5px] font-semibold text-[18px] hover:text-[#0C021D] leading-none">Projects we support</Button>
           </div>
-        </div>
+        </motion.div>
       </Section>
 
       <Section>
-        <div className="flex flex-col items-center">
+        <motion.div initial={{ transform: "translate(0, 100px)", opacity: 0 }} whileInView={{ transform: "translate(0, 0px)", opacity: 1 }}  className="flex flex-col items-center">
           <div className="font-bold font-neue text-[20px] xs:text-[35px] lg:text-[50px] text-center uppercase leading-none tracking-tighter">
             Who we <span className="text-transparent bg-clip-text bg-gradient-primary">support</span>
           </div>
@@ -160,13 +167,13 @@ const Home = () => {
             </div>)}
           </div>
           <div className="flex justify-center w-full mt-10">
-            <button className="bg-white w-full sm:w-auto px-2 sm:px-[20px] lg:px-[50px] py-5 rounded-[5px] font-semibold text-[#0C021D] text-[18px] leading-none tracking-tighter">Apply For The French Connectivity Grant Program</button>
+            <Button className="bg-white w-full sm:w-auto px-2 sm:px-[20px] lg:px-[50px] py-5 rounded-[5px] font-semibold text-[#0C021D] text-[18px] leading-none tracking-tighter">Apply For The French Connectivity Grant Program</Button>
           </div>
-        </div>
+        </motion.div>
       </Section>
 
       <Section className="py-[50px]">
-        <div className="flex flex-col items-center gap-10 font-compact">
+        <motion.div initial={{ transform: "translate(0, 100px)", opacity: 0 }} whileInView={{ transform: "translate(0, 0px)", opacity: 1 }}  className="flex flex-col items-center gap-10 font-compact">
           <div className="flex flex-wrap items-center justify-center gap-4">
             <div className="flex justify-center items-center bg-white rounded-full w-[30px] sm:w-[49px] h-[30px] sm:h-[49px]">
               <img src="/imgs/logo.png" alt="" className="w-6 h-6 sm:w-10 sm:h-10" />
@@ -179,7 +186,7 @@ const Home = () => {
             <a href="#">Cookie policy</a>
           </div>
           <div className="font-semibold text-center">© 2024 World Mobile Token (BVI) Ltd All rights reserved</div>
-        </div>
+        </motion.div>
       </Section>
 
       <img src="/imgs/footer.jpg" alt="" className="absolute bottom-0 -z-10 h-[577px] w-full" />
