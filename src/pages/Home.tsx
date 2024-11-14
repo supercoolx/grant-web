@@ -58,12 +58,12 @@ const Home = () => {
     <div className="relative">
       <motion.div className="fixed top-0 left-0 z-10 w-full h-1 origin-left bg-red-500" style={{ scaleX: scrollYProgress }} />
       <div className="relative flex flex-col items-center lg:items-start bg-[url('/imgs/home-mobile.jpg')] lg:bg-[url('/imgs/home.jpg')] bg-cover bg-center lg:px-[140px] pt-[53px] h-[810px]">
-        <div className="flex items-center gap-4">
+        <motion.div initial={{ scale: 0, opacity: 0 }} whileInView={{ scale: 1, opacity: 1 }} className="flex items-center gap-4">
           <img src="/imgs/logo.png" alt="" className="" width={40} height={40} />
           <span className="text-2xl font-semibold">WMTx</span>
-        </div>
+        </motion.div>
         <div className="flex flex-col items-center lg:items-start mt-10 sm:mt-20 lg:mt-[113px] px-5 lg:px-0 w-full">
-          <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}  className="font-bold font-neue text-[50px] text-center sm:text-[70px] md:text-[80px] lg:text-[100px] lg:text-left xs:text-[60px] leading-none tracking-tighter scale-x-90 xs:scale-x-100">
+          <motion.div initial={{ scale: 0, opacity: 0 }} whileInView={{ scale: 0.9, opacity: 1 }} className="font-bold font-neue text-[50px] text-center sm:text-[70px] md:text-[80px] lg:text-[100px] lg:text-left xs:text-[60px] leading-none tracking-tighter scale-x-90 xs:scale-x-100">
             THE FRENCH<br />CONNECTIVITY
           </motion.div>
           <motion.div initial={{ transform: "translate(0, 100px)", opacity: 0 }} whileInView={{ transform: "translate(0, 0px)", opacity: 1 }} className="space-y-[10px] mt-5 text-center lg:text-left">
@@ -94,7 +94,7 @@ const Home = () => {
         </div>
       </div>
 
-      <motion.div initial={{ transform: "translate(0, 100px)", opacity: 0 }} whileInView={{ transform: "translate(0, 0px)", opacity: 1 }}  className="flex flex-col items-center px-5 xs:px-10 sm:px-16 md:px-20 lg:px-[100px] py-[90px]">
+      <motion.div initial={{ transform: "translate(0, 100px)", opacity: 0 }} whileInView={{ transform: "translate(0, 0px)", opacity: 1 }} className="flex flex-col items-center px-5 xs:px-10 sm:px-16 md:px-20 lg:px-[100px] py-[90px]">
         <div className="bg-gradient-primary px-2 sm:px-10 py-[15px] rounded-[5px] font-bold font-neue text-[20px] xs:text-[35px] lg:text-[50px] text-center uppercase leading-none tracking-tighter">World Mobile's Ecosystem Program<br />Fuels Global DePIN Innovation</div>
         <div className="mt-5 text-[#BDB2D0] text-center">
           <p>World Mobile, the world's first global decentralised wireless network, is pleased to announce the launch of its ecosystem support programme designed to encourage innovation and development on the World Mobile Chain. As a leading provider of Decentralised Physical Infrastructure Network (DePIN) technology, World Mobile is dedicated to promoting the adoption and growth of DePIN solutions worldwide.</p><br />
@@ -107,7 +107,7 @@ const Home = () => {
       </motion.div>
 
       <Section>
-        <motion.div initial={{ transform: "translate(0, 100px)", opacity: 0 }} whileInView={{ transform: "translate(0, 0px)", opacity: 1 }}  className="apply-section">
+        <motion.div initial={{ transform: "translate(0, 100px)", opacity: 0 }} whileInView={{ transform: "translate(0, 0px)", opacity: 1 }} className="apply-section">
           <div className="text-center">
             <div className="font-bold font-neue text-[40px] sm:text-[60px] lg:text-[100px] leading-none">$25,000,000</div>
             <div className="mt-[10px] font-semibold text-[20px] xs:text-[24px]">Grant Powered by $WMTx</div>
@@ -123,7 +123,7 @@ const Home = () => {
       </Section>
 
       <Section>
-        <motion.div initial={{ transform: "translate(0, 100px)", opacity: 0 }} whileInView={{ transform: "translate(0, 0px)", opacity: 1 }}  className="flex flex-col items-center">
+        <motion.div initial={{ transform: "translate(0, 100px)", opacity: 0 }} whileInView={{ transform: "translate(0, 0px)", opacity: 1 }} className="flex flex-col items-center">
           <div className="font-bold font-neue text-[20px] xs:text-[35px] lg:text-[50px] text-center uppercase leading-none tracking-tighter">
             Why build on the <span className="text-transparent bg-clip-text bg-gradient-primary">World Mobile Chain (WMC)?</span>
           </div>
@@ -153,7 +153,7 @@ const Home = () => {
       </Section>
 
       <Section>
-        <motion.div initial={{ transform: "translate(0, 100px)", opacity: 0 }} whileInView={{ transform: "translate(0, 0px)", opacity: 1 }}  className="flex flex-col items-center">
+        <motion.div initial={{ transform: "translate(0, 100px)", opacity: 0 }} whileInView={{ transform: "translate(0, 0px)", opacity: 1 }} className="flex flex-col items-center">
           <div className="font-bold font-neue text-[20px] xs:text-[35px] lg:text-[50px] text-center uppercase leading-none tracking-tighter">
             Who we <span className="text-transparent bg-clip-text bg-gradient-primary">support</span>
           </div>
@@ -173,7 +173,7 @@ const Home = () => {
       </Section>
 
       <Section className="pt-[50px] pb-[120px] lg:pb-[50px]">
-        <motion.div initial={{ transform: "translate(0, 100px)", opacity: 0 }} whileInView={{ transform: "translate(0, 0px)", opacity: 1 }}  className="flex flex-col items-center gap-10 font-compact">
+        <motion.div initial={{ transform: "translate(0, 100px)", opacity: 0 }} whileInView={{ transform: "translate(0, 0px)", opacity: 1 }} className="flex flex-col items-center gap-10 font-compact">
           <div className="flex flex-wrap items-center justify-center gap-4">
             <div className="flex justify-center items-center bg-white rounded-full w-[30px] sm:w-[49px] h-[30px] sm:h-[49px]">
               <img src="/imgs/logo.png" alt="" className="w-6 h-6 sm:w-10 sm:h-10" />
