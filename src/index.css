@@ -6,10 +6,6 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   font-family: 'SF Pro Display';
   background-color: #130328;

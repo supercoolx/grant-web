@@ -1,4 +1,5 @@
 import { motion, useScroll } from "motion/react";
+import SmoothScroll from 'smooth-scroll';
 
 import Button from "../components/Button";
 
@@ -7,6 +8,7 @@ import Telegram from "../assets/svgs/telegram.svg?react";
 import Discord from "../assets/svgs/discord.svg?react";
 import X from "../assets/svgs/x.svg?react";
 import Message from "../assets/svgs/message.svg?react";
+import { useEffect } from "react";
 
 const contents = [
   {
@@ -53,6 +55,16 @@ const contents = [
 
 const Home = () => {
   const { scrollYProgress } = useScroll();
+
+  useEffect(() => {
+    const scroll = new SmoothScroll('a[href*="#"]', {
+      speed: 1200,  // Adjust speed for smoother scroll
+    });
+
+    return () => {
+      scroll.destroy(); // Cleanup on component unmount
+    };
+  }, []);
 
   return (
     <div className="relative">
