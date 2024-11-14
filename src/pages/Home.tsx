@@ -63,7 +63,7 @@ const Home = () => {
           <span className="text-2xl font-semibold">WMTx</span>
         </motion.div>
         <div className="flex flex-col items-center lg:items-start mt-10 sm:mt-20 lg:mt-[113px] px-5 lg:px-0 w-full">
-          <motion.div initial={{ scale: 0, opacity: 0 }} whileInView={{ scale: 0.9, opacity: 1 }} className="font-bold font-neue text-[50px] text-center sm:text-[70px] md:text-[80px] lg:text-[100px] lg:text-left xs:text-[60px] leading-none tracking-tighter scale-x-90 xs:scale-x-100">
+          <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} className="font-bold font-neue text-[50px] text-center sm:text-[70px] md:text-[80px] lg:text-[100px] lg:text-left xs:text-[60px] leading-none tracking-tighter scale-x-90 xs:scale-x-100">
             THE FRENCH<br />CONNECTIVITY
           </motion.div>
           <motion.div initial={{ transform: "translate(0, 100px)", opacity: 0 }} whileInView={{ transform: "translate(0, 0px)", opacity: 1 }} className="space-y-[10px] mt-5 text-center lg:text-left">
@@ -75,9 +75,9 @@ const Home = () => {
           </motion.div>
           <div className="flex gap-[10px] sm:gap-5 mt-10 w-full justify-center lg:justify-start">
             <Button href="https://forms.gle/dsb6hQsuu3omcLeT9" className="flex items-center justify-center w-full xs:w-auto bg-white xs:px-[50px] py-5 rounded-[5px] font-semibold text-[#0C021D] text-[18px] leading-none">Apply now</Button>
-            <Button href="https://forms.gle/dsb6hQsuu3omcLeT9" className="flex items-center justify-center w-full xs:w-auto border-white bg-gradient-to-b from-white/50 to-white/0 xs:px-[50px] py-5 border rounded-[5px] font-semibold text-[18px] leading-none">Learn more</Button>
+            <Button href="#world_mobile" className="flex items-center justify-center w-full xs:w-auto border-white bg-gradient-to-b from-white/50 to-white/0 xs:px-[50px] py-5 border rounded-[5px] font-semibold text-[18px] leading-none">Learn more</Button>
           </div>
-          <div className="border-t border-white/20 backdrop-blur-md lg:backdrop-blur-0 lg:border-t-0 py-5 lg:top-1/2 lg:right-[25px] bottom-0 fixed z-10 flex justify-evenly lg:justify-center w-full lg:w-auto lg:flex-col items-center lg:gap-5 mt-10 lg:mt-0 lg:-translate-y-1/2">
+          <div className="fixed bottom-0 z-10 flex items-center w-full py-5 mt-10 border-t border-white/20 backdrop-blur-md lg:backdrop-blur-0 lg:border-t-0 lg:top-1/2 lg:right-12 justify-evenly lg:justify-center lg:w-auto lg:flex-col lg:gap-5 lg:mt-0 lg:-translate-y-1/2">
             <Button href="https://t.me/WorldMobileTeam" className="flex justify-center items-center border-white bg-gradient-to-b from-white/50 to-white/0 border rounded-full w-[50px] h-[50px]">
               <Telegram />
             </Button>
@@ -94,6 +94,7 @@ const Home = () => {
         </div>
       </div>
 
+      <div id="world_mobile" className="">
       <motion.div initial={{ transform: "translate(0, 100px)", opacity: 0 }} whileInView={{ transform: "translate(0, 0px)", opacity: 1 }} className="flex flex-col items-center px-5 xs:px-10 sm:px-16 md:px-20 lg:px-[100px] py-[90px]">
         <div className="bg-gradient-primary px-2 sm:px-10 py-[15px] rounded-[5px] font-bold font-neue text-[20px] xs:text-[35px] lg:text-[50px] text-center uppercase leading-none tracking-tighter">World Mobile's Ecosystem Program<br />Fuels Global DePIN Innovation</div>
         <div className="mt-5 text-[#BDB2D0] text-center">
@@ -101,12 +102,13 @@ const Home = () => {
           <p>The company recognises the vast potential of DePIN in revolutionising network infrastructure and is allocating significant resources to support projects built on its dedicated chain. With a strong emphasis on expanding its presence in the United States and other key markets globally, World Mobile aims to establish itself as a premier facilitator of DePIN technology. Through this ecosystem support programme, World Mobile seeks to collaborate with developers, entrepreneurs, and organisations who share its vision of a more secure, efficient, and user-centric network infrastructure. The company believes that by cultivating a thriving ecosystem of DePIN solutions, it can accelerate the realisation of this transformative technology's full potential.</p>
         </div>
         <div className="flex flex-col justify-center w-full gap-5 mt-10 sm:flex-row">
-          <Button className="flex items-center justify-center w-full sm:w-auto bg-white px-[50px] py-5 rounded-[5px] font-semibold text-[#0C021D] text-[18px] leading-none">Apply now</Button>
-          <Button className="flex items-center justify-center w-full sm:w-auto border-white bg-gradient-to-b from-white/50 to-white/0 p-5 border rounded-[5px] font-semibold text-[18px] hover:text-[#0C021D] leading-none">More about the program</Button>
+          <Button href="https://forms.gle/dsb6hQsuu3omcLeT9" className="flex items-center justify-center w-full sm:w-auto bg-white px-[50px] py-5 rounded-[5px] font-semibold text-[#0C021D] text-[18px] leading-none">Apply now</Button>
+          <Button href="#grand_power" className="flex items-center justify-center w-full sm:w-auto border-white bg-gradient-to-b from-white/50 to-white/0 p-5 border rounded-[5px] font-semibold text-[18px] leading-none">More about the program</Button>
         </div>
       </motion.div>
+      </div>
 
-      <Section>
+      <Section id="grand_power">
         <motion.div initial={{ transform: "translate(0, 100px)", opacity: 0 }} whileInView={{ transform: "translate(0, 0px)", opacity: 1 }} className="apply-section">
           <div className="text-center">
             <div className="font-bold font-neue text-[40px] sm:text-[60px] lg:text-[100px] leading-none">$25,000,000</div>
@@ -117,12 +119,12 @@ const Home = () => {
           </div>
           <div className="flex flex-col justify-center w-full gap-5 mt-5 sm:flex-row">
             <Button href="https://forms.gle/dsb6hQsuu3omcLeT9" className="flex items-center justify-center bg-white px-[50px] py-5 rounded-[5px] font-semibold text-[#0C021D] text-[18px] leading-none">Apply now</Button>
-            <Button href="https://forms.gle/dsb6hQsuu3omcLeT9" className="flex items-center justify-center border-white bg-gradient-to-b from-white/50 to-white/0 p-5 border rounded-[5px] font-semibold text-[18px] hover:text-[#0C021D] leading-none">More about WMC</Button>
+            <Button href="#why_build" className="flex items-center justify-center border-white bg-gradient-to-b from-white/50 to-white/0 p-5 border rounded-[5px] font-semibold text-[18px] leading-none">More about WMC</Button>
           </div>
         </motion.div>
       </Section>
 
-      <Section>
+      <Section id="why_build">
         <motion.div initial={{ transform: "translate(0, 100px)", opacity: 0 }} whileInView={{ transform: "translate(0, 0px)", opacity: 1 }} className="flex flex-col items-center">
           <div className="font-bold font-neue text-[20px] xs:text-[35px] lg:text-[50px] text-center uppercase leading-none tracking-tighter">
             Why build on the <span className="text-transparent bg-clip-text bg-gradient-primary">World Mobile Chain (WMC)?</span>
@@ -147,12 +149,12 @@ const Home = () => {
           </div>
           <div className="flex flex-col justify-center w-full gap-5 mt-10 sm:flex-row">
             <Button href="https://forms.gle/dsb6hQsuu3omcLeT9" className="flex items-center justify-center bg-white px-[50px] py-5 rounded-[5px] font-semibold text-[#0C021D] text-[18px] leading-none">Apply now</Button>
-            <Button href="https://forms.gle/dsb6hQsuu3omcLeT9" className="flex items-center justify-center border-white bg-gradient-to-b from-white/50 to-white/0 p-5 border rounded-[5px] font-semibold text-[18px] hover:text-[#0C021D] leading-none">Projects we support</Button>
+            <Button href="#support" className="flex items-center justify-center border-white bg-gradient-to-b from-white/50 to-white/0 p-5 border rounded-[5px] font-semibold text-[18px] leading-none">Projects we support</Button>
           </div>
         </motion.div>
       </Section>
 
-      <Section>
+      <Section id="support">
         <motion.div initial={{ transform: "translate(0, 100px)", opacity: 0 }} whileInView={{ transform: "translate(0, 0px)", opacity: 1 }} className="flex flex-col items-center">
           <div className="font-bold font-neue text-[20px] xs:text-[35px] lg:text-[50px] text-center uppercase leading-none tracking-tighter">
             Who we <span className="text-transparent bg-clip-text bg-gradient-primary">support</span>
