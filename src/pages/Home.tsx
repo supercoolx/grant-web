@@ -77,7 +77,7 @@ const Home = () => {
             <Button href="https://forms.gle/dsb6hQsuu3omcLeT9" className="flex items-center justify-center w-full xs:w-auto bg-white xs:px-[50px] py-5 rounded-[5px] font-semibold text-[#0C021D] text-[18px] leading-none">Apply now</Button>
             <Button href="https://forms.gle/dsb6hQsuu3omcLeT9" className="flex items-center justify-center w-full xs:w-auto border-white bg-gradient-to-b from-white/50 to-white/0 xs:px-[50px] py-5 border rounded-[5px] font-semibold text-[18px] leading-none">Learn more</Button>
           </div>
-          <div className="lg:top-1/2 lg:right-[25px] bottom-10 absolute flex lg:flex-col items-center gap-5 mt-10 lg:mt-0 lg:-translate-y-1/2">
+          <div className="border-t border-white/20 backdrop-blur-md lg:border-t-0 py-5 lg:top-1/2 lg:right-[25px] bottom-0 fixed lg:absolute z-10 flex justify-evenly lg:justify-center w-full lg:w-auto lg:flex-col items-center lg:gap-5 mt-10 lg:mt-0 lg:-translate-y-1/2">
             <Button href="https://t.me/WorldMobileTeam" className="flex justify-center items-center border-white bg-gradient-to-b from-white/50 to-white/0 border rounded-full w-[50px] h-[50px]">
               <Telegram />
             </Button>
@@ -172,7 +172,7 @@ const Home = () => {
         </motion.div>
       </Section>
 
-      <Section className="py-[50px]">
+      <Section className="pt-[50px] pb-[120px] lg:pb-[50px]">
         <motion.div initial={{ transform: "translate(0, 100px)", opacity: 0 }} whileInView={{ transform: "translate(0, 0px)", opacity: 1 }}  className="flex flex-col items-center gap-10 font-compact">
           <div className="flex flex-wrap items-center justify-center gap-4">
             <div className="flex justify-center items-center bg-white rounded-full w-[30px] sm:w-[49px] h-[30px] sm:h-[49px]">
