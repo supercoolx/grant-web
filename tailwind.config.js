@@ -10,6 +10,9 @@ export default {
         compact: 'SF Compact Text',
         neue: 'Helvetica Neue',
         pro: 'SF Pro Display'
+      },
+      screens: {
+        xs: '450px'
       }
     },
   },

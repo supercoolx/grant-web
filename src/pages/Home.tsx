@@ -1,11 +1,188 @@
+import Section from "../components/Section";
+import Telegram from "../assets/svgs/telegram.svg?react";
+import Discord from "../assets/svgs/discord.svg?react";
+import X from "../assets/svgs/x.svg?react";
+import Message from "../assets/svgs/message.svg?react";
+
+const contents = [
+  {
+    title: "Decentralised Telecommunications Focus:",
+    content: "Projects that prioritise the decentralisation of telecommunications infrastructure and services."
+  },
+  {
+    title: "Decentralisation of Physical Infrastructure:",
+    content: "Initiatives that aim to decentralise physical infrastructure, such as networks, hardware, and facilities."
+  },
+  {
+    title: "Web2 Applications Seeking Decentralisation:",
+    content: "Existing Web2 applications looking to transition towards decentralised operations and architectures."
+  },
+  {
+    title: "Web2 and Web3 Applications and dApps:",
+    content: "A wide range of applications, including traditional Web2 apps, Web3 apps, and decentralised applications (dApps)."
+  },
+  {
+    title: "Projects Addressing Interconnectivity Issues:",
+    content: "Ventures that tackle challenges related to interconnectivity, such as interoperability, cross-chain communication, and network integration."
+  },
+  {
+    title: "On-chain Security through Decentralisation and Data Management Excellence:",
+    content: "Projects that enhance on-chain security by leveraging decentralisation techniques and implementing best practices in data management."
+  },
+  {
+    title: "Governance of Existing and Future Projects:",
+    content: "Initiatives that explore and implement innovative governance models, consensus protocols, and information sharing mechanisms for both existing and upcoming projects."
+  },
+  {
+    title: "Zero-Knowledge as the Next Frontier: ",
+    content: "Projects that advance the use of zero-knowledge proofs and related technologies for secure data Projects that advance the use of zero-knowledge proofs and related technologies for secure data "
+  },
+  {
+    title: "Digital Identity and Decentralised Identity (DID) Management:",
+    content: "Solutions that focus on the development and management of digital identities and decentralised identity systems."
+  },
+  {
+    title: "Real-World Assets on Chain:",
+    content: "Projects that bridge the gap between real-world assets and blockchain technology, enabling the tokenization and on-chain representation of physical assets."
+  }
+]
+
 const Home = () => {
   return (
-    <div className="">
-      <div className="">
-        <div className="flex items-center">
+    <div className="relative">
+      <div className="relative flex flex-col items-center lg:items-start bg-[url('/imgs/home-mobile.jpg')] lg:bg-[url('/imgs/home.jpg')] bg-cover bg-center lg:px-[140px] pt-[53px] h-[810px]">
+        <div className="flex items-center gap-4">
           <img src="/imgs/logo.png" alt="" className="" width={40} height={40} />
+          <span className="text-2xl font-semibold">WMTx</span>
+        </div>
+        <div className="flex flex-col items-center lg:items-start mt-10 sm:mt-20 lg:mt-[113px] px-5 lg:px-0 w-full">
+          <div className="font-bold font-neue text-[50px] text-center sm:text-[70px] md:text-[80px] lg:text-[100px] lg:text-left xs:text-[60px] leading-none tracking-tighter scale-x-90 xs:scale-x-100">
+            THE FRENCH<br />CONNECTIVITY
+          </div>
+          <div className="space-y-[10px] mt-5 text-center lg:text-left">
+            <div className="font-semibold text-[20px] text-center lg:text-left text-wrap">
+              <p>Introducing the World Mobile Chain Grant Program:</p>
+              <p><span className="text-transparent bg-clip-text bg-gradient-primary">Allocating $25M</span> to Fuel the Future of DePIN Development</p>
+            </div>
+            <div className="max-w-[547px] text-[#BDB2D0]">Introducing World Mobile Chain’s dedicated non-dilutive grant program, enabling the wave of DePIN innovation onchain.</div>
+          </div>
+          <div className="flex gap-[10px] sm:gap-5 mt-10 w-full justify-center lg:justify-start">
+            <button className="w-full xs:w-auto bg-white xs:px-[50px] py-5 rounded-[5px] font-semibold text-[#0C021D] text-[18px] leading-none">Apply now</button>
+            <button className="w-full xs:w-auto border-white bg-gradient-to-b from-white/50 to-white/0 xs:px-[50px] py-5 border rounded-[5px] font-semibold text-[18px] leading-none">Learn more</button>
+          </div>
+          <div className="lg:top-1/2 lg:right-[25px] bottom-10 absolute flex lg:flex-col items-center gap-5 mt-10 lg:mt-0 lg:-translate-y-1/2">
+            <button className="flex justify-center items-center hover:scale-110 active:scale-100 border-white bg-gradient-to-b from-white/50 to-white/0 border rounded-full w-[50px] h-[50px] transition-all duration-200">
+              <Telegram />
+            </button>
+            <button className="flex justify-center items-center hover:scale-110 active:scale-100 border-white bg-gradient-to-b from-white/50 to-white/0 border rounded-full w-[50px] h-[50px] transition-all duration-200">
+              <Discord />
+            </button>
+            <button className="flex justify-center items-center hover:scale-110 active:scale-100 border-white bg-gradient-to-b from-white/50 to-white/0 border rounded-full w-[50px] h-[50px] transition-all duration-200">
+              <X />
+            </button>
+            <button className="flex justify-center items-center hover:scale-110 active:scale-100 border-white bg-gradient-to-b from-white/50 to-white/0 border rounded-full w-[50px] h-[50px] transition-all duration-200">
+              <Message />
+            </button>
+          </div>
         </div>
       </div>
+
+      <div className="flex flex-col items-center px-5 xs:px-10 sm:px-16 md:px-20 lg:px-[100px] py-[90px]">
+        <div className="bg-gradient-primary px-2 sm:px-10 py-[15px] rounded-[5px] font-bold font-neue text-[20px] xs:text-[35px] lg:text-[50px] text-center uppercase leading-none tracking-tighter">World Mobile's Ecosystem Program<br />Fuels Global DePIN Innovation</div>
+        <div className="mt-5 text-[#BDB2D0] text-center">
+          <p>World Mobile, the world's first global decentralised wireless network, is pleased to announce the launch of its ecosystem support programme designed to encourage innovation and development on the World Mobile Chain. As a leading provider of Decentralised Physical Infrastructure Network (DePIN) technology, World Mobile is dedicated to promoting the adoption and growth of DePIN solutions worldwide.</p><br />
+          <p>The company recognises the vast potential of DePIN in revolutionising network infrastructure and is allocating significant resources to support projects built on its dedicated chain. With a strong emphasis on expanding its presence in the United States and other key markets globally, World Mobile aims to establish itself as a premier facilitator of DePIN technology. Through this ecosystem support programme, World Mobile seeks to collaborate with developers, entrepreneurs, and organisations who share its vision of a more secure, efficient, and user-centric network infrastructure. The company believes that by cultivating a thriving ecosystem of DePIN solutions, it can accelerate the realisation of this transformative technology's full potential.</p>
+        </div>
+        <div className="flex flex-col justify-center w-full gap-5 mt-10 sm:flex-row">
+          <button className="w-full sm:w-auto bg-white px-[50px] py-5 rounded-[5px] font-semibold text-[#0C021D] text-[18px] leading-none">Apply now</button>
+          <button className="w-full sm:w-auto border-white hover:bg-white p-5 border rounded-[5px] font-semibold text-[18px] hover:text-[#0C021D] leading-none transition-all duration-200">More about the program</button>
+        </div>
+      </div>
+
+      <Section>
+        <div className="apply-section">
+          <div className="text-center">
+            <div className="font-bold font-neue text-[40px] sm:text-[60px] lg:text-[100px] leading-none">$25,000,000</div>
+            <div className="mt-[10px] font-semibold text-[20px] xs:text-[24px]">Grant Powered by $WMTx</div>
+          </div>
+          <div className="mt-5 lg:px-[78px] text-center">
+            The $25,000,000 grant programme is powered by the World Mobile Token (WMTx). WMTx is the utility token that enables the sharing economy of World Mobile's global mobile network. All transactions generated on the network, including calls, data usage, and wallet transactions, will be paid out in WMTx to node operators and those staking WMTx. By rewarding network participants for actual usage, such as calls, texts, streaming, and internet browsing, World Mobile is establishing itself as a pioneer in the wireless industry, offering a unique and sustainable model for network growth and user engagement.
+          </div>
+          <div className="flex flex-col justify-center w-full gap-5 mt-5 sm:flex-row">
+            <button className="bg-white px-[50px] py-5 rounded-[5px] font-semibold text-[#0C021D] text-[18px] leading-none">Apply now</button>
+            <button className="border-white hover:bg-white p-5 border rounded-[5px] font-semibold text-[18px] hover:text-[#0C021D] leading-none transition-all duration-200">More about WMC</button>
+          </div>
+        </div>
+      </Section>
+
+      <Section>
+        <div className="flex flex-col items-center">
+          <div className="font-bold font-neue text-[20px] xs:text-[35px] lg:text-[50px] text-center uppercase leading-none tracking-tighter">
+            Why build on the <span className="text-transparent bg-clip-text bg-gradient-primary">World Mobile Chain (WMC)?</span>
+          </div>
+          <div className="grid gap-5 mt-10 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="flex flex-col justify-center items-center space-y-[10px] border-[#2C2735] px-5 py-10 border rounded-[20px]">
+              <div className="font-semibold text-[20px] text-center">World's First Dedicated Telco DePIN Chain</div>
+              <div className="text-[#A196B2] text-center">WMC is an EVM-compatible Layer 3 blockchain built on top of Base, offering fast and affordable transactions. This makes it easy for developers to deploy applications on the network.</div>
+            </div>
+            <div className="flex flex-col justify-center items-center space-y-[10px] border-[#2C2735] px-5 py-10 border rounded-[20px]">
+              <div className="font-semibold text-[20px] text-center">Decentralised by Design</div>
+              <div className="text-[#A196B2] text-center">Tap into WMC's network of 1,000 Earth Node Operators (ENOs) to run your applications in a decentralised manner, ensuring robustness and resilience.</div>
+            </div>
+            <div className="flex flex-col justify-center items-center space-y-[10px] border-[#2C2735] px-5 py-10 border rounded-[20px]">
+              <div className="font-semibold text-[20px] text-center">24/7 Community and Developer Relations Support</div>
+              <div className="text-[#A196B2] text-center">Benefit from an existing community of passionate supporters and receive top-notch assistance from our dedicated developer relations team.</div>
+            </div>
+            <div className="flex flex-col justify-center items-center space-y-[10px] border-[#2C2735] px-5 py-10 border rounded-[20px]">
+              <div className="font-semibold text-[20px] text-center">Inclusive Grant Programme</div>
+              <div className="text-[#A196B2] text-center">Our grants start from $5,000, ensuring that everyone has a fair chance to contribute to the ecosystem, regardless of the size or scale of their projects.</div>
+            </div>
+          </div>
+          <div className="flex flex-col justify-center w-full gap-5 mt-10 sm:flex-row">
+            <button className="bg-white px-[50px] py-5 rounded-[5px] font-semibold text-[#0C021D] text-[18px] leading-none">Apply now</button>
+            <button className="border-white hover:bg-white p-5 border rounded-[5px] font-semibold text-[18px] hover:text-[#0C021D] leading-none transition-all duration-200">Projects we support</button>
+          </div>
+        </div>
+      </Section>
+
+      <Section>
+        <div className="flex flex-col items-center">
+          <div className="font-bold font-neue text-[20px] xs:text-[35px] lg:text-[50px] text-center uppercase leading-none tracking-tighter">
+            Who we <span className="text-transparent bg-clip-text bg-gradient-primary">support</span>
+          </div>
+          <div className="grid grid-flow-col mt-10 grid-rows-10 lg:grid-rows-5 gap-x-10">
+            {contents.map((content, key) => <div key={key} className="flex gap-[2px] bg-gradient-to-r even:bg-gradient-to-r odd:from-[#3F247C40] even:from-[#3A2172] odd:to-[#2C273500] even:to-[#2C273500] p-[10px] pb-6">
+              <div className="w-8 h-8 font-semibold">{key + 1}.</div>
+              <div className="flex-1">
+                <div className="font-bold">{content.title}</div>
+                <div className="text-[#BDB2D0]">{content.content}</div>
+              </div>
+            </div>)}
+          </div>
+          <div className="flex justify-center w-full mt-10">
+            <button className="bg-white w-full sm:w-auto px-2 sm:px-[20px] lg:px-[50px] py-5 rounded-[5px] font-semibold text-[#0C021D] text-[18px] leading-none tracking-tighter">Apply For The French Connectivity Grant Program</button>
+          </div>
+        </div>
+      </Section>
+
+      <Section className="py-[50px]">
+        <div className="flex flex-col items-center gap-10 font-compact">
+          <div className="flex flex-wrap items-center justify-center gap-4">
+            <div className="flex justify-center items-center bg-white rounded-full w-[30px] sm:w-[49px] h-[30px] sm:h-[49px]">
+              <img src="/imgs/logo.png" alt="" className="w-6 h-6 sm:w-10 sm:h-10" />
+            </div>
+            <div className="font-semibold text-[18px] sm:text-[28px] tracking-tighter whitespace-nowrap">Powering the future of connectivity</div>
+          </div>
+          <div className="flex flex-col items-center justify-center gap-4 tracking-tighter xs:flex-row">
+            <a href="#">Terms and conditions</a>
+            <a href="#">Privacy policy</a>
+            <a href="#">Cookie policy</a>
+          </div>
+          <div className="font-semibold text-center">© 2024 World Mobile Token (BVI) Ltd All rights reserved</div>
+        </div>
+      </Section>
+
+      <img src="/imgs/footer.jpg" alt="" className="absolute bottom-0 -z-10 h-[577px] w-full" />
     </div>
   )
 }

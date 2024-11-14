@@ -1,117 +1,117 @@
 @font-face {
     font-family: 'SF Compact Text';
     font-weight: 900;
-    src: url('./SF-Compact-Text-Black.otf') format('opentype');
+    src: url('/fonts/compact/SF-Compact-Text-Black.otf') format('opentype');
   }
   
   @font-face {
     font-family: 'SF Compact Text';
     font-weight: 900;
     font-style: italic;
-    src: url('./SF-Compact-Text-BlackItalic.otf') format('opentype');
+    src: url('/fonts/compact/SF-Compact-Text-BlackItalic.otf') format('opentype');
   }
   
   @font-face {
     font-family: 'SF Compact Text';
     font-weight: bold;
-    src: url('./SF-Compact-Text-Bold.otf') format('opentype');
+    src: url('/fonts/compact/SF-Compact-Text-Bold.otf') format('opentype');
   }
   
   @font-face {
     font-family: 'SF Compact Text';
     font-weight: bold;
     font-style: italic;
-    src: url('./SF-Compact-Text-BoldItalic.otf') format('opentype');
+    src: url('/fonts/compact/SF-Compact-Text-BoldItalic.otf') format('opentype');
   }
   
   @font-face {
     font-family: 'SF Compact Text';
     font-weight: 800;
-    src: url('./SF-Compact-Text-Heavy.otf') format('opentype');
+    src: url('/fonts/compact/SF-Compact-Text-Heavy.otf') format('opentype');
   }
   
   @font-face {
     font-family: 'SF Compact Text';
     font-weight: 800;
     font-style: italic;
-    src: url('./SF-Compact-Text-HeavyItalic.otf') format('opentype');
+    src: url('/fonts/compact/SF-Compact-Text-HeavyItalic.otf') format('opentype');
   }
   
   @font-face {
     font-family: 'SF Compact Text';
     font-weight: 300;
-    src: url('./SF-Compact-Text-Light.otf') format('opentype');
+    src: url('/fonts/compact/SF-Compact-Text-Light.otf') format('opentype');
   }
   
   @font-face {
     font-family: 'SF Compact Text';
     font-weight: 300;
     font-style: italic;
-    src: url('./SF-Compact-Text-LightItalic.otf') format('opentype');
+    src: url('/fonts/compact/SF-Compact-Text-LightItalic.otf') format('opentype');
   }
   
   @font-face {
     font-family: 'SF Compact Text';
     font-weight: 500;
-    src: url('./SF-Compact-Text-Medium.otf') format('opentype');
+    src: url('/fonts/compact/SF-Compact-Text-Medium.otf') format('opentype');
   }
   
   @font-face {
     font-family: 'SF Compact Text';
     font-weight: 500;
     font-style: italic;
-    src: url('./SF-Compact-Text-MediumItalic.otf') format('opentype');
+    src: url('/fonts/compact/SF-Compact-Text-MediumItalic.otf') format('opentype');
   }
   
   @font-face {
     font-family: 'SF Compact Text';
     font-weight: normal;
-    src: url('./SF-Compact-Text-Regular.otf') format('opentype');
+    src: url('/fonts/compact/SF-Compact-Text-Regular.otf') format('opentype');
   }
   
   @font-face {
     font-family: 'SF Compact Text';
     font-weight: normal;
     font-style: italic;
-    src: url('./SF-Compact-Text-RegularItalic.otf') format('opentype');
+    src: url('/fonts/compact/SF-Compact-Text-RegularItalic.otf') format('opentype');
   }
   
   @font-face {
     font-family: 'SF Compact Text';
     font-weight: 600;
-    src: url('./SF-Compact-Text-Semibold.otf') format('opentype');
+    src: url('/fonts/compact/SF-Compact-Text-Semibold.otf') format('opentype');
   }
   
   @font-face {
     font-family: 'SF Compact Text';
     font-weight: 600;
     font-style: italic;
-    src: url('./SF-Compact-Text-SemiboldItalic.otf') format('opentype');
+    src: url('/fonts/compact/SF-Compact-Text-SemiboldItalic.otf') format('opentype');
   }
   
   @font-face {
     font-family: 'SF Compact Text';
     font-weight: 100;
-    src: url('./SF-Compact-Text-Thin.otf') format('opentype');
+    src: url('/fonts/compact/SF-Compact-Text-Thin.otf') format('opentype');
   }
   
   @font-face {
     font-family: 'SF Compact Text';
     font-weight: 100;
     font-style: italic;
-    src: url('./SF-Compact-Text-ThinItalic.otf') format('opentype');
+    src: url('/fonts/compact/SF-Compact-Text-ThinItalic.otf') format('opentype');
   }
   
   @font-face {
     font-family: 'SF Compact Text';
     font-weight: 200;
-    src: url('./SF-Compact-Text-Ultralight.otf') format('opentype');
+    src: url('/fonts/compact/SF-Compact-Text-Ultralight.otf') format('opentype');
   }
   
   @font-face {
     font-family: 'SF Compact Text';
     font-weight: 200;
     font-style: italic;
-    src: url('./SF-Compact-Text-UltralightItalic.otf') format('opentype');
+    src: url('/fonts/compact/SF-Compact-Text-UltralightItalic.otf') format('opentype');
   }
   

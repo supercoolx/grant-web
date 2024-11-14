@@ -2,58 +2,58 @@
     font-family: 'SF Pro Display';
     font-weight: 900;
     font-style: italic;
-    src: url('./SFPRODISPLAYBLACKITALIC.OTF') format('opentype');
+    src: url('/fonts/pro/SFPRODISPLAYBLACKITALIC.OTF') format('opentype');
 }
 
 @font-face {
     font-family: 'SF Pro Display';
     font-weight: bold;
-    src: url('./SFPRODISPLAYBOLD.OTF') format('opentype');
+    src: url('/fonts/pro/SFPRODISPLAYBOLD.OTF') format('opentype');
 }
 
 @font-face {
     font-family: 'SF Pro Display';
     font-weight: 800;
     font-style: italic;
-    src: url('./SFPRODISPLAYHEAVYITALIC.OTF') format('opentype');
+    src: url('/fonts/pro/SFPRODISPLAYHEAVYITALIC.OTF') format('opentype');
 }
 
 @font-face {
     font-family: 'SF Pro Display';
     font-weight: 300;
     font-style: italic;
-    src: url('./SFPRODISPLAYLIGHTITALIC.OTF') format('opentype');
+    src: url('/fonts/pro/SFPRODISPLAYLIGHTITALIC.OTF') format('opentype');
 }
 
 @font-face {
     font-family: 'SF Pro Display';
     font-weight: 500;
-    src: url('./SFPRODISPLAYMEDIUM.OTF') format('opentype');
+    src: url('/fonts/pro/SFPRODISPLAYMEDIUM.OTF') format('opentype');
 }
 
 @font-face {
     font-family: 'SF Pro Display';
     font-weight: normal;
-    src: url('./SFPRODISPLAYREGULAR.OTF') format('opentype');
+    src: url('/fonts/pro/SFPRODISPLAYREGULAR.OTF') format('opentype');
 }
 
 @font-face {
     font-family: 'SF Pro Display';
     font-weight: 600;
     font-style: italic;
-    src: url('./SFPRODISPLAYSEMIBOLDITALIC.OTF') format('opentype');
+    src: url('/fonts/pro/SFPRODISPLAYSEMIBOLDITALIC.OTF') format('opentype');
 }
 
 @font-face {
     font-family: 'SF Pro Display';
     font-weight: 100;
     font-style: italic;
-    src: url('./SFPRODISPLAYTHINITALIC.OTF') format('opentype');
+    src: url('/fonts/pro/SFPRODISPLAYTHINITALIC.OTF') format('opentype');
 }
 
 @font-face {
     font-family: 'SF Pro Display';
     font-weight: 200;
     font-style: italic;
-    src: url('./SFPRODISPLAYULTRALIGHTITALIC.OTF') format('opentype');
+    src: url('/fonts/pro/SFPRODISPLAYULTRALIGHTITALIC.OTF') format('opentype');
 }

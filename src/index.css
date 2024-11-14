@@ -7,5 +7,17 @@
 @tailwind utilities;
 
 body {
-    font-family: 'SF Pro Display';
+  font-family: 'SF Pro Display';
+  background-color: #130328;
+  color: white;
+  font-size: 16px;
+}
+
+.bg-gradient-primary {
+  @apply bg-gradient-to-r from-[#713DE6] via-[#DC474B] to-[#F38749];
+}
+
+.apply-section {
+  @apply flex flex-col items-center bg-cover bg-center px-5 py-[30px] sm:py-[50px] rounded-[20px];
+  background-image: linear-gradient(90.37deg, #522CAA80 0%, #A2363980 55%, #9A542C80 100%), url('/imgs/apply.jpg');
 }
